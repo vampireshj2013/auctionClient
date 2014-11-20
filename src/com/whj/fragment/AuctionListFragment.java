@@ -39,6 +39,11 @@ public class AuctionListFragment extends Fragment{
 		}
 		mCallbacks = (Callbacks)activity;
 	}
-	
+	public void setActivateOnItemClick(boolean activateOnItemClick)
+	{
+		auctionList.setChoiceMode(activateOnItemClick 
+			? ListView.CHOICE_MODE_SINGLE
+			: ListView.CHOICE_MODE_NONE);
+	}
 
 }

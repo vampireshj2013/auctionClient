@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:stretchColumns="1">
+    <ImageView android:src="@drawable/logo"
+        android:contentDescription="@string/welcome"
+        android:scaleType="fitCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TableRow >
+        <TextView android:text="@string/user_name"
+            android:textSize="@dimen/label_font_size"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+        <EditText
+			android:id="@+id/userEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="text"/>
+    </TableRow>
+    <TableRow >
+        <TextView
+			android:text="@string/user_pass"
+			android:textSize="@dimen/label_font_size"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<EditText
+			android:text=""
+			android:id="@+id/pwdEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textPassword"/>
+    </TableRow>
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        
+        <Button android:id="@+id/bnLogin"
+            android:text="@string/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+			android:id="@+id/bnCancel"
+			android:text="@string/cancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+    </LinearLayout>
+</TableLayout>
